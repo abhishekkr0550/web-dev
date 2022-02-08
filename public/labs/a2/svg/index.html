@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG</title>
+</head>
+<body>
+    <a name="top"></a>
+    <h2>Table of content</h2>
+    <ul>
+        <li><a href="#rectangle">
+            SVG Rectangle</a></li>
+        <li><a href="#circle">
+            SVG Circle</a></li>
+        <li><a href="#polygon">
+            SVG Polygon</a></li>
+    </ul>
+
+    <a name="rectangle"></a>
+    <h2>Drawing rectangles</h2>
+    <a href="#top">Top</a><br/>
+    <svg width="300" height="100">
+        <rect width="300" height="100"
+              style="fill:rgb(0,0,255); stroke-width:10;
+            stroke:rgb(0,0,0)" />
+    </svg>
+
+    <a name="circle"></a>
+    <h2>Drawing circles</h2>
+    <a href="#top">Top</a><br/>
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40"
+                stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
+
+    <a name="polygon"></a>
+    <h2>Drawing polygons</h2>
+    <a href="#top">Top</a><br/>
+    <svg width="300" height="200">
+        <polygon points="100,10 40,198 190,78 10,78 160,198"
+                 style="fill:lime; stroke:purple; stroke-width:5; fill-rule:evenodd;" />
+    </svg>
+
+
+
+</body>
+</html>
