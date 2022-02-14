@@ -1,0 +1,34 @@
+@media (min-width: 0px) and (max-width: 600px) {
+    body {
+        h1: red;
+        h2:green;
+        h3:white;
+        background-color: yellow;
+    }
+    .media-query {
+        background-color: red;
+        color: white;
+    }
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+    body {
+        background-color: blue;
+        color: white;
+    }
+
+    .media-query {
+        background-color: yellow;
+        color: black;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1800px) {
+    body {
+        background-color: red;
+        color: white;
+    }
+    .media-query {
+        background-color: blue;
+        color: white;
+    }
+}
