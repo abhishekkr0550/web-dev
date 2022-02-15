@@ -1,0 +1,86 @@
+.wd-bg-color-black
+{
+    background-color: black;
+}
+
+.wd-search-color-gray
+{
+    background-color: darkgray;
+    color:white;
+    width: 80%;
+}
+
+.wd-rounded-corners-all-around {
+    border-radius: 50px;
+}
+
+.wd-margin-right {
+    /*margin-left: 50px;*/
+    margin-right: 12px;
+    color:white;
+}
+
+.wd-margin-left {
+    margin-left: 12px;
+}
+
+.wd-color-font-selected {
+    color:rgb(29,161,242);
+    font-size:15px
+}
+
+.wd-color-font {
+    color:rgb(110, 118, 125);
+    font-size:15px
+}
+
+.wd-float-right {
+    float: right;
+    height: 100px;
+}
+
+.wd-padded-top-left-bottom {
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+
+}
+.wd-padded-right {
+    padding-right: 16px;
+}
+
+.wd-p-gray{
+    color:darkgray;
+    font-size:10px;
+}
+
+.wd-p-gray-font{
+    color:rgb(110, 118, 125);
+    font-size:13px;
+}
+
+.wd-hr-border {
+    border: 1px solid gray;
+}
+
+.wd-p-white{
+    color:white;
+}
+
+.wd-p-lightgray{
+    color:lightgray;
+}
+.wd-author-img{
+    width: 100px;
+    height: 100px;
+}
+
+.wd-rounded-corners-all-around {
+    border-radius: 10px;
+}
+
+.wd-image-margin-right {
+    margin-right: 16px;
+}
+
+
