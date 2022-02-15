@@ -3,11 +3,22 @@
     background-color: black;
 }
 
+.wd-border-solid{
+    border-style: solid;
+    border-color:rgb(47, 51, 54);
+
+}
+.wd-padding-left-16 {
+    padding-left: 16px;
+}
+
+/*border:1px solid rgb(47, 51, 54)*/
+
 .wd-search-color-gray
 {
     background-color: darkgray;
     color:white;
-    width: 80%;
+    width: 90%;
 }
 
 .wd-rounded-corners-all-around {
@@ -83,4 +94,58 @@
     margin-right: 16px;
 }
 
+.wd-padding-top{
+    padding-top: 12px;
+    /*padding-left: 16px;*/
+}
 
+.wd-header-h1{
+    color:white;
+    font-size:20px;
+}
+
+.wd-handle{
+    color:lightgray;
+    font-size:13px;
+}
+
+.wd-border-bottom {
+    border-style: solid;
+    padding-bottom: 12px;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-color: lightgray;
+}
+.wd-border-avatar {
+    border-style: solid;
+    padding-top: 12px;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-color: lightgray;
+}
+
+.wd-bookmark-img {
+    width:48px;
+    height:48px;
+    border-radius: 48px;
+}
+
+
+.wd-padding-left-12 {
+    padding-left: 12px;
+    padding-top: 12px;
+}
+
+.wd-author-name {
+    /*font-color:white;*/
+    font-size: 15px;
+    color:white;
+}
+
+.wd-author-handle{
+    /*font-color:lightgray;*/
+    font-size: 15px;
+    color:lightgray;
+}
