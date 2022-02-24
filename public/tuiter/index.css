@@ -230,3 +230,14 @@
     bottom: 5%;
     left: 5%;
 }
+
+.btn-primary-white {
+    background-color: white !important;
+    color: black;
+}
+
+.list-group-item {
+    background-color: black;
+    color:white;
+
+}
