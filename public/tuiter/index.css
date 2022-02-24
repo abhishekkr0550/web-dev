@@ -73,6 +73,13 @@
 
 .wd-p-white{
     color:white;
+
+}
+
+.wd-p-white-small{
+    color:white;
+    font-size:13px;
+
 }
 
 .wd-p-lightgray{
@@ -185,4 +192,41 @@
 .wd-padding-left-64 {
     padding-left: 64px;
 
+}
+
+.wd-button-fit {
+    width: 100%;
+    padding: 0px;
+}
+
+.input-icons i {
+    position: absolute;
+}
+
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
 }

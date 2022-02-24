@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Explore</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
     <link href="index.css" rel="stylesheet"/>
 
 </head>
@@ -10,80 +14,206 @@
     <div class="wd-bg-color-black wd-border-solid wd-padding-left-16">
 
         <a href="navigation.html">Back</a><br><br>
-        <input class="wd-search-color-gray wd-rounded-corners-all-around wd-margin-left" id="text-fields-search" placeholder="Search Tuiter"/>
-        <a class="wd-margin-right wd-float-right" href="explore-settings.html">S</a>  <br><br>
+        <i class="fa fa-cog"></i>
 
-        <a class="wd-margin-left wd-color-font-selected wd-padded-top-left-bottom wd-padded-right"  href="explore-settings.html">For You</a>
-        <a class="wd-color-font wd-padded-top-left-bottom wd-padded-right" href="explore-settings.html">Trending</a>
-        <a class="wd-color-font wd-padded-top-left-bottom wd-padded-right" href="explore-settings.html">COVID-19</a>
-        <a class="wd-color-font wd-padded-top-left-bottom wd-padded-right" href="explore-settings.html">News</a>
-        <a class="wd-color-font wd-padded-top-left-bottom wd-padded-right" href="explore-settings.html">Sports</a>
-        <a class="wd-color-font wd-padded-top-left-bottom wd-padded-right" href="explore-settings.html">Entertainment</a> <br><br>
-
-        <div>
-            <p class="wd-p-gray">
-                Trending in Science
-            </p>
-            <p class="wd-p-gray-font">
-                Starship
-            </p>
-            <p class="wd-p-gray">
-                55.5K Tuits
-            </p>
-            <hr class="wd-hr-border">
-            <p class="wd-p-gray">
-                Sports-Trending
-            </p>
-            <p class="wd-p-gray-font">
-                Joe Rogan
-            </p>
-            <p class="wd-p-gray">
-                5,218 Tuits
-            </p>
-
-            <hr class="wd-hr-border">
-
-        </div>
-        <div>
-            <p class="wd-p-white">
-                The New York times
-                <img class="wd-author-img wd-float-right wd-rounded-corners-all-around wd-image-margin-right"
-                     src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"/>
-            </p>
-            <p class="wd-p-gray-font">
-                CNN's Cuomo conundrum: A star anchor with a brother in trouble.
-
-            </p>
-            <br>
-            <br>
-
-            <hr class="wd-hr-border">
-            <p class="wd-p-lightgray">
-                COVID-19 &nbsp;&nbsp;&nbsp; Live
-                <img class="wd-author-img wd-float-right wd-rounded-corners-all-around wd-image-margin-right"
-                     src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"/>
-            </p>
-            <p class="wd-p-gray-font">
-                CNN's Cuomo conundrum: A star anchor with a brother in trouble.
-
-            </p>
-            <br>
-            <br>
-            <hr class="wd-hr-border">
+        <div class="row">
+            <div class="col-2 col-md-2 col-xl-3 mt-1 mb-1" >
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                        <i class="fab fa-twitter fa-2x"></i><br/>
 
 
-        </div>
-        <div>
-            <p class="wd-p-gray">
-                Trending in United States
-            </p>
-            <p class="wd-p-gray-font">
-                Wonder bread
-            </p>
-            <p class="wd-p-gray">
-                1,259 Tuits
-            </p>
-        </div>
+                    </a>
+                    <a href="home.html" class="list-group-item list-group-item-action" aria-current="true">
+                        <i class="fa fa-home"></i>&nbsp
+                        Home
+                    </a>
+                    <a href="explore.html" class="list-group-item list-group-item-action active">
+                        <i class="fa fa-hashtag"></i>&nbsp
+
+                        Explore</a>
+                    <a href="notifications.html" class="list-group-item list-group-item-action">
+                        <i class="fa fa-bell"></i>&nbsp Notifications</a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="fa fa-envelope"></i>&nbsp Messages</a>
+                    <a href="bookmarks.html" class="list-group-item list-group-item-action">
+                        <i class="fa fa-bookmark"></i>&nbsp  Bookmark</a>
+                    <a href="lists.html" class="list-group-item list-group-item-action">
+                        <i class="fa fa-list"></i> &nbsp List</a>
+                    <a href="profile.html" class="list-group-item list-group-item-action">
+                        <i class="fa fa-user"></i>&nbsp Profile</a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="fa fa-chart-bar"></i>&nbsp More</a>
+                </div>
+                <br>
+                    <button class="btn btn-primary btn-block rounded-pill wd-button-fit mt-1">
+                        Tuit
+                    </button><br>
+
+            </div>
+            <div class="col-10 col-md-8 col-xl-6">
+                <div class="ms-1 me-1">
+                    <div class="mt-1 mb-3 input-icons"">
+                        <i class="fas fa-search ms-3 mt-2"></i>
+
+                        <input class="wd-search-color-gray wd-rounded-corners-all-around wd-margin-left ps-4 rounded-pill" id="text-fields-search" placeholder="Search Tuiter"/>
+                        <a class="wd-margin-right wd-float-right mt-1" href="explore-settings.html">    <i class="fa fa-cog"></i>
+                        </a>
+                    </div>
+                    <div class="mb-1">
+                        <a class="wd-margin-left wd-color-font-selected wd-padded-top-left-bottom wd-padded-right"  href="explore-settings.html">For You</a>
+                        <a class="wd-color-font wd-padded-top-left-bottom wd-padded-right" href="explore-settings.html">Trending</a>
+                        <a class="wd-color-font wd-padded-top-left-bottom wd-padded-right" href="explore-settings.html">COVID-19</a>
+                        <a class="wd-color-font wd-padded-top-left-bottom wd-padded-right" href="explore-settings.html">News</a>
+                        <a class="wd-color-font wd-padded-top-left-bottom wd-padded-right" href="explore-settings.html">Sports</a>
+                        <a class="wd-color-font wd-padded-top-left-bottom wd-padded-right" href="explore-settings.html">Entertainment</a> <br><br>
+                    </div>
+                    <div class="container">
+                        <img src="../images/spacex.jpeg"
+                             width="100%"/>
+                        <div class="bottom-left">Space X's Starship</div>
+    <!--                    <p class="wd-p-gray">-->
+    <!--                        Trending in Science-->
+    <!--                    </p>-->
+    <!--                    <p class="wd-p-gray-font">-->
+    <!--                        Starship-->
+    <!--                    </p>-->
+    <!--                    <p class="wd-p-gray">-->
+    <!--                        55.5K Tuits-->
+    <!--                    </p>-->
+    <!--                    <hr class="wd-hr-border">-->
+    <!--                    <p class="wd-p-gray">-->
+    <!--                        Sports-Trending-->
+    <!--                    </p>-->
+    <!--                    <p class="wd-p-gray-font">-->
+    <!--                        Joe Rogan-->
+    <!--                    </p>-->
+    <!--                    <p class="wd-p-gray">-->
+    <!--                        5,218 Tuits-->
+    <!--                    </p>-->
+
+    <!--                    <hr class="wd-hr-border">-->
+
+                    </div>
+                    <br>
+                    <div>
+
+                        <p class="wd-p-white">
+                            The New York times
+                            <img class="wd-author-img float-end wd-rounded-corners-all-around wd-image-margin-right"
+                                 src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"/>
+                        </p>
+                        <p class="wd-p-white-small">React JS <i class="fas fa-check-circle"></i></p>
+
+
+                        <p class="wd-p-gray-font">
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.
+
+                        </p>
+                        <hr class="wd-hr-border">
+                        <p class="wd-p-white">
+                            Google CEO
+                            <img class="wd-author-img float-end wd-rounded-corners-all-around wd-image-margin-right"
+                                 src="../images/sundar.jpeg"/>
+                        </p>
+                        <p class="wd-p-white-small">Alphabet <i class="fas fa-check-circle"></i></p>
+
+
+                        <p class="wd-p-gray-font">
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.
+
+                        </p>
+                        <hr class="wd-hr-border">
+                        <p class="wd-p-white">
+                            Space X
+                            <img class="wd-author-img float-end wd-rounded-corners-all-around wd-image-margin-right"
+                                 src="../images/elon.jpeg"/>
+                        </p>
+                        <p class="wd-p-white-small">Elon <Musk></Musk> <i class="fas fa-check-circle"></i></p>
+
+
+                        <p class="wd-p-gray-font">
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.
+
+                        </p>
+                        <hr class="wd-hr-border">
+                        <p class="wd-p-white">
+                            Northeastern Student
+                            <img class="wd-author-img float-end wd-rounded-corners-all-around wd-image-margin-right"
+                                 src="../images/abhishek.jpeg"/>
+                        </p>
+                        <p class="wd-p-white-small">Abhishek Kumar <i class="fas fa-check-circle"></i></p>
+
+
+                        <p class="wd-p-gray-font">
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.
+
+                        </p>
+
+
+                    </div>
+                    <div>
+                        <p class="wd-p-gray">
+                            Trending in United States
+                        </p>
+                        <p class="wd-p-gray-font">
+                            Wonder bread
+                        </p>
+                        <p class="wd-p-gray">
+                            1,259 Tuits
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-xl-3">
+                <div class="list-group ms-1 me-1">
+                    <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                        <label>Who to follow</label>
+
+                    </a>
+
+                    <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+
+                        <label><img class="rounded-circle" src="../images/java.png"
+                             width="40px"/> Java <i class="fas fa-check-circle"></i></label>
+                        <button class="btn btn-primary rounded-pill float-end">
+                            Follow
+                        </button>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                        <img class="rounded-circle" src="../images/relativity_space.jpeg"
+                             width="40px"/> Relativity Space <i class="fas fa-check-circle"></i>
+                        <button class="btn btn-primary rounded-pill float-end">
+                            Follow
+                        </button>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                        <img class="rounded-circle" src="../images/virgin.png"
+                             width="40px"/> Virgin Galactic <i class="fas fa-check-circle"></i>
+                        <button class="btn btn-primary rounded-pill float-end">
+                            Follow
+                        </button>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                        <img class="rounded-circle" src="../images/nasa.jpeg"
+                             width="40px"/> Nasa <i class="fas fa-check-circle"></i>
+                        <button class="btn btn-primary rounded-pill float-end">
+                            Follow
+                        </button>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                        <img class="rounded-circle" src="../images/tesla.jpeg"
+                             width="40px"/> Tesla
+                        <button class="btn btn-primary rounded-pill float-end">
+                            Follow
+                        </button>
+                    </a>
+
+                </div>
+
+
+            </div>
 
 
 

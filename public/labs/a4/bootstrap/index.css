@@ -1,0 +1,28 @@
+.btn-primary.override-bs {
+    background-color: #a90dfd;
+    border-color: #fd0d51;
+    border-width: 10px;
+    border-radius: 20px;
+    border-style: dashed;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.selector-1 .selector-3 {
+    background-color: red;
+    color: white;
+}
+
+.bg-color-red {
+    background-color: red;
+}
+
+.bg-color-blue {
+    background-color: blue;
+}
+
+
+
+.bg-color-yellow {
+    background-color: yellow;
+}
