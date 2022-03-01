@@ -25,8 +25,9 @@ const ExploreComponent = () => {
            </ul>
            <img src="../../images/spacex.jpeg"
                              width="90%"/>
-                             
+           
            <div class="bottom-left">Space X's Starship</div>
+           
            <ul>
            <br> 
            ${
