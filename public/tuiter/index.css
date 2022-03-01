@@ -226,9 +226,9 @@
 }
 
 .bottom-left {
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
+    position: relative;
+    bottom: 4%;
+    left: -30%;
 }
 
 .btn-primary-white {

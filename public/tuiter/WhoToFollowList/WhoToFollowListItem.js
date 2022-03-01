@@ -2,7 +2,7 @@ const WhoToFollowListItem = (w) => {
 
     return(`
         
-                <li  class="list-group-item" aria-current="true" >
+                <li  class="list-group-item" aria-current="true" align="left">
                     <label><img class="rounded-circle " src=${w.avatarIcon}
                          width="40px" alt="Abhishek"/> ${w.userName} <i class="fas fa-check-circle"></i><br>
                          <span class="wd-text-small">

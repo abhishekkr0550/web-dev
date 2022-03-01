@@ -23,8 +23,12 @@ const ExploreComponent = () => {
            <ul class="nav mb-2 nav-tabs">
                       <!-- tabs -->
            </ul>
-           <!-- image with overlaid text -->
+           <img src="../../images/spacex.jpeg"
+                             width="90%"/>
+                             
+           <div class="bottom-left">Space X's Starship</div>
            <ul>
+           <br> 
            ${
         posts.map(post => {
             return(PostSummaryItem(post));
