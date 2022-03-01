@@ -4,11 +4,11 @@ const NavigationSidebar = () => {
                 <a class="list-group-item" href="/" >
                     <i class="fab fa-twitter" ></i>
                 </a>
-                <a href="../home.html" class="list-group-item list-group-item-action" aria-current="true">
+                <a href="../HomeScreen/home.html" class="list-group-item list-group-item-action" aria-current="true">
                     <i class="fa fa-home"></i>&nbsp
                     <span class="d-none d-xl-inline d-xxl-inline">Home</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action active">
+                <a href="../ExploreScreen/explore.html" class="list-group-item list-group-item-action active">
                     <i class="fa fa-hashtag"></i>&nbsp
                     <span class="d-none d-xl-inline d-xxl-inline">Explore</span>
                 </a>
