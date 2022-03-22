@@ -17,22 +17,22 @@ const NavigationSidebar = ({
                     <i className="fa fa-hashtag"></i>
                     <span className="ps-2 d-none d-xl-inline d-xxl-inline">Explore</span>
                 </Link>
-                <a href="../notifications.html" className="list-group-item list-group-item-action">
+                <a href="templink.html" className="list-group-item list-group-item-action">
                     <i className="fa fa-bell"></i><span className="ps-2 d-none d-xl-inline d-xxl-inline">Notifications</span> </a>
-                <a href="#" className="list-group-item list-group-item-action">
+                <a href="templink.html" className="list-group-item list-group-item-action">
                     <i className="fa fa-envelope"></i><span className="ps-2 d-none d-xl-inline d-xxl-inline">Messages</span> </a>
-                <a href="../bookmarks.html" className="list-group-item list-group-item-action">
+                <a href="templink.html" className="list-group-item list-group-item-action">
                     <i className="fa fa-bookmark"></i><span className="ps-2 d-none d-xl-inline d-xxl-inline">Bookmark</span>  </a>
-                <a href="../lists.html" className="list-group-item list-group-item-action">
+                <a href="templink.html" className="list-group-item list-group-item-action">
                     <i className="fa fa-list"></i> <span className="ps-2 d-none d-xl-inline d-xxl-inline">List</span> </a>
-                <a href="../profile.html" className="list-group-item list-group-item-action">
+                <a href="templink.html" className="list-group-item list-group-item-action">
                     <i className="fa fa-user"></i><span className="ps-2 d-none d-xl-inline d-xxl-inline">Profile</span> </a>
-                <a href="#" className="list-group-item list-group-item-action">
+                <a href="templink.html" className="list-group-item list-group-item-action">
                     <i className="fa fa-chart-bar"></i>  <span className="ps-2 d-none d-xl-inline d-xxl-inline">More</span> </a>
             </div>
 
             <div className="d-grid mt-2">
-                <a href="tweet.html"
+                <a href="templink.html"
                    className="btn btn-primary btn-block rounded-pill">
                     Tweet</a>
             </div>

@@ -25,7 +25,7 @@ const ExploreComponent = () => {
            </div>
            <ul className="nav mb-2 nav-tabs">
            </ul>
-           <img src="../../images/spacex.jpeg"
+           <img src="../../images/spacex.jpeg" alt="image"
                              width="90%"/>
 
            <div className="bottom-left">Space X's Starship</div>
