@@ -1,6 +1,5 @@
 import React from "react";
 
-import PostItem from "../PostList/PostItem";
 import NavigationSidebar from "../navigation-sidebar";
 import PostSummaryList from "../PostSummaryList";
 import PostItemList from "../PostList";
