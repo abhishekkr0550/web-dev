@@ -3,6 +3,7 @@ import React from "react";
 import PostItem from "../PostList/PostItem";
 import NavigationSidebar from "../navigation-sidebar";
 import PostSummaryList from "../PostSummaryList";
+import PostItemList from "../PostList";
 
 
 
@@ -13,7 +14,7 @@ const HomeScreen = () => {
                 <NavigationSidebar active="home"/>
             </div>
             <div className="col-10 col-md-10 col-lg-7 col-xl-6">
-                <PostItem/>
+                <PostItemList/>
             </div>
             <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
                 <PostSummaryList/>

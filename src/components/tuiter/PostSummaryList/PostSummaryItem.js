@@ -11,8 +11,8 @@ const PostSummaryItem = ({
                          }) => {
             return(
                 <>
-                <a classNameName="list-group-item" aria-current="true" align="left" href="templink.html">
-                    <p classNameName="wd-p-white">
+                <li className="list-group-item" aria-current="true" align="left" >
+                    <p className="wd-p-white">
                         {post.topic}
                         <img className="wd-author-img float-end wd-rounded-corners-all-around wd-image-margin-right"
                              src={post.image} alt="spaceX" width="80px"/>
@@ -25,8 +25,7 @@ const PostSummaryItem = ({
 
                     </p>
 
-                </a>
-                    <hr className="wd-hr-border"></hr>
+                </li>
 
                 </>
                 );
