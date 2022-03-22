@@ -3,6 +3,7 @@ import PostSummaryItem from "./PostSummaryItem.js";
 
 const ExploreComponent = () => {
     return(`
+
             <div class="row">
                 <div class="mt-1 mb-3 input-icons"">
                         <i class="fas fa-search ms-3 mt-2"></i>

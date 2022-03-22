@@ -1,13 +1,249 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+
+.wd-bg-color-black
+{
+  background-color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.wd-border-solid{
+  border-style: solid;
+  border-color:rgb(47, 51, 54);
+
+}
+.wd-padding-left-16 {
+  padding-left: 16px;
+}
+
+/*border:1px solid rgb(47, 51, 54)*/
+
+.wd-search-color-gray
+{
+  background-color: darkgray;
+  color:white;
+  width: 90%;
+}
+
+
+.wd-margin-right {
+  /*margin-left: 50px;*/
+  margin-right: 12px;
+  color:white;
+}
+
+.wd-margin-left {
+  margin-left: 12px;
+}
+
+.wd-color-font-selected {
+  color:rgb(29,161,242);
+  font-size:15px
+}
+
+.wd-color-font {
+  color:rgb(110, 118, 125);
+  font-size:15px
+}
+
+.wd-float-right {
+  float: right;
+  height: 100px;
+}
+
+.wd-padded-top-left-bottom {
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 16px;
+
+}
+.wd-padded-right {
+  padding-right: 16px;
+}
+
+.wd-p-gray{
+  color:darkgray;
+  font-size:10px;
+}
+
+.wd-p-gray-font{
+  color:rgb(110, 118, 125);
+  font-size:13px;
+}
+
+.wd-hr-border {
+  border: 1px solid gray;
+}
+
+.wd-p-white{
+  color:white;
+
+}
+
+.wd-p-white-small{
+  color:white;
+  font-size:13px;
+
+}
+
+.wd-p-lightgray{
+  color:lightgray;
+}
+.wd-author-img{
+  width: 100px;
+  height: 100px;
+}
+
+.wd-rounded-corners-all-around {
+  border-radius: 10px;
+}
+
+.wd-image-margin-right {
+  margin-right: 16px;
+}
+
+.wd-padding-top{
+  padding-top: 12px;
+  /*padding-left: 16px;*/
+}
+
+.wd-header-h1{
+  color:white;
+  font-size:20px;
+}
+
+.wd-handle{
+  color:lightgray;
+  font-size:13px;
+}
+
+.wd-border-bottom {
+  border-style: solid;
+  padding-bottom: 12px;
+  border-top: 1px;
+  border-left: 1px;
+  border-right: 1px;
+  border-color: lightgray;
+}
+.wd-border-avatar {
+  border-style: solid;
+  padding-top: 12px;
+  border-top: 1px;
+  border-left: 1px;
+  border-right: 1px;
+  border-color: lightgray;
+}
+
+.wd-bookmark-img {
+  width:48px;
+  height:48px;
+  border-radius: 48px;
+}
+
+
+.wd-padding-left-12 {
+  padding-left: 12px;
+  padding-top: 12px;
+}
+
+.wd-author-name {
+  /*font-color:white;*/
+  font-size: 15px;
+  color:white;
+}
+
+.wd-author-handle{
+  font-size: 15px;
+  color:lightgray;
+}
+
+.wd-bookmark-para{
+  font-size: 15px;
+  width: 506px;
+  color:white;
+  padding: 12px 16px 12px 64px;
+}
+
+.wd-bookmark-big-img{
+  width:90%;
+  /*height:;*/
+  padding-left: 64px;
+}
+
+.wd-bookmark-para-body{
+  font-size: 15px;
+  width: 506px;
+  color:lightgray;
+  padding: 12px 16px 12px 64px;
+}
+
+.wd-round-border{
+  border: 1px solid gray;
+  border-radius: 50px;
+}
+
+
+.wd-icon-lightgray {
+  color:lightgray;
+  font-size:15px;
+}
+
+.wd-icon-red {
+  color:red;
+  font-size:15px;
+}
+
+.wd-padding-left-64 {
+  padding-left: 64px;
+
+}
+
+.wd-button-fit {
+  width: 100%;
+  padding: 0px;
+}
+
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.icon {
+  padding: 10px;
+  min-width: 40px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: relative;
+  bottom: 4%;
+  left: -30%;
+}
+
+.btn-primary-white {
+  background-color: white !important;
+  color: black;
+}
+
+.list-group-item {
+  background-color: black;
+  color:white;
+
+}
+
+.wd-text-small {
+  font-size:12px;
 }

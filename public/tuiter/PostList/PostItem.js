@@ -1,7 +1,7 @@
 const PostItem = () => {
     return(`    
     <div class="row">
-        <div class="wd-bg-color-black wd-border-solid wd-padding-left-16">
+        <div class="wd-bg-color-black wd-border-solid">
         
 
             <img class="wd-padding-top wd-bookmark-img"

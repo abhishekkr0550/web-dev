@@ -21,7 +21,7 @@ const NavigationSidebar = () => {
                 <a href="../lists.html" class="list-group-item list-group-item-action">
                     <i class="fa fa-list"></i> &nbsp<span class="d-none d-xl-inline d-xxl-inline">List</span> </a>
                 <a href="../profile.html" class="list-group-item list-group-item-action">
-                    <i class="fa fa-user"></i>&nbsp<span class="d-none d-xl-inline d-xxl-inline">Profile</span> </a>
+                    <i class="fa fa-user"></i><span class="d-none d-xl-inline d-xxl-inline ps-2">Profile</span> </a>
                 <a href="#" class="list-group-item list-group-item-action">
                     <i class="fa fa-chart-bar"></i>&nbsp<span class="d-none d-xl-inline d-xxl-inline">More</span> </a>
             
