@@ -15,7 +15,7 @@ const PostSummaryItem = ({
                     <p classNameName="wd-p-white">
                         {post.topic}
                         <img className="wd-author-img float-end wd-rounded-corners-all-around wd-image-margin-right"
-                             src={post.image} alt="image" width="80px"/>
+                             src={post.image} alt="spaceX" width="80px"/>
                     </p>
                     <p className="wd-p-white-small ">{post.userName} <i className="fas fa-check-circle"></i></p>
 
