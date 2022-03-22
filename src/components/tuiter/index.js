@@ -1,12 +1,14 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import ExploreScreen from "./explore-screen/explore-screen";
+import PostItem from "./PostList/PostItem";
+import HomeScreen from "./HomeScreen/HomeScreen";
 
 const Tuiter = () => {
     return(
         <>
 
-            <ExploreScreen/>
+            <HomeScreen/>
             <Link to="/hello">
                 Hello
             </Link> |

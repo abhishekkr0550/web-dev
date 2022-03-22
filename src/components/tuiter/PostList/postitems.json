@@ -1,0 +1,18 @@
+[
+  { "name": "Elon Musk",
+    "handle": "robert_zubrin",
+    "date": "July 4th",
+    "title": "Amazing show about SpaceX mission.",
+    "image": "https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg",
+    "heading": "Countdown : Inspiration 4 - Mission to space",
+    "data": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a chance."
+  },
+  { "name": "Sundar Pichai",
+    "handle": "sundar_pichai",
+    "date": "June 14th",
+    "title": "Amazing show about Chrome.",
+    "image": "../../images/react.png",
+    "heading": "Journey to Alphabet",
+    "data": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a chance."
+  }
+]

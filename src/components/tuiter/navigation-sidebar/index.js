@@ -1,19 +1,22 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
-const NavigationSidebar = () => {
+const NavigationSidebar = ({
+                               active = 'explore'
+                           }) => {
     return(<>
-            <div className="list-group" >
-                <a className="list-group-item" href="/" >
+            <div className="list-group" align="left"  >
+                <Link to="/" className="list-group-item">
                     <i className="fab fa-twitter" ></i>
-                </a>
-                <a href="../HomeScreen/home.html" className="list-group-item list-group-item-action" aria-current="true">
+                </Link>
+                <Link to="/tuiter/home" className={`list-group-item list-group-item-action ${active === 'home' ? 'active' : ''}`} aria-current="true">
                     <i className="fa fa-home"></i>
                     <span className="ps-2 d-none d-xl-inline d-xxl-inline">Home</span>
-                </a>
-                <a href="../ExploreScreen/explore.html" className="list-group-item list-group-item-action active">
+                </Link>
+                <Link to="/tuiter/explore" className={`list-group-item list-group-item-action ${active === 'explore' ? 'active' : ''}`}>
                     <i className="fa fa-hashtag"></i>
                     <span className="ps-2 d-none d-xl-inline d-xxl-inline">Explore</span>
-                </a>
+                </Link>
                 <a href="../notifications.html" className="list-group-item list-group-item-action">
                     <i className="fa fa-bell"></i><span className="ps-2 d-none d-xl-inline d-xxl-inline">Notifications</span> </a>
                 <a href="#" className="list-group-item list-group-item-action">
