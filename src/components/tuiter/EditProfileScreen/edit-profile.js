@@ -57,7 +57,7 @@ const EditProfile = () => {
     const todoChangeWebsite = (event) => {
         const name = event.target.value;
         const newProfile = {
-            ... profileChange,
+            ...profileChange,
             website: name
         };
         setProfileChange(newProfile);

@@ -5,7 +5,7 @@ const profileReducer = (state = ProfileData, action) => {
         case 'change-profile':
             console.log(action);
             const newProfile = {
-                ...state, ... action.profileChange
+                ...state, ...action.profileChange
             };
             console.log(newProfile);
             return newProfile;
