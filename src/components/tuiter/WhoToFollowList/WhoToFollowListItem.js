@@ -10,12 +10,12 @@ const WhoToFollowListItem = ( {
 
     return(<>
         
-                <li  class="list-group-item" aria-current="true" align="left">
-                    <label><img class="rounded-circle " src={w.avatarIcon}
-                                width="40px" alt="Abhishek"/> {w.userName} <i class="fas fa-check-circle"></i><br></br>
-                         <span class="wd-text-small">
+                <li  className="list-group-item" aria-current="true" align="left">
+                    <label><img className="rounded-circle " src={w.avatarIcon}
+                                width="40px" alt="Abhishek"/> {w.userName} <i className="fas fa-check-circle"></i><br></br>
+                         <span className="wd-text-small">
                         @{w.handle}</span></label>
-                        <button class="btn btn-primary-white rounded-pill float-end">
+                        <button className="btn btn-primary-white rounded-pill float-end">
                             Follow
                         </button>
                     

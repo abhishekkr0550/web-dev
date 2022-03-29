@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 
 const NavigationSidebar = ({
-                               active = 'explore'
+                               active = 'home'
                            }) => {
     return(<>
             <div className="list-group" align="left"  >
@@ -25,8 +25,8 @@ const NavigationSidebar = ({
                     <i className="fa fa-bookmark"></i><span className="ps-2 d-none d-xl-inline d-xxl-inline">Bookmark</span>  </a>
                 <a href="templink.html" className="list-group-item list-group-item-action">
                     <i className="fa fa-list"></i> <span className="ps-2 d-none d-xl-inline d-xxl-inline">List</span> </a>
-                <a href="templink.html" className="list-group-item list-group-item-action">
-                    <i className="fa fa-user"></i><span className="ps-2 d-none d-xl-inline d-xxl-inline">Profile</span> </a>
+                <Link to="/tuiter/profile" className={`list-group-item list-group-item-action ${active === 'profile' ? 'active' : ''}`}>
+                    <i className="fa fa-user"></i><span className="ps-2 d-none d-xl-inline d-xxl-inline">Profile</span> </Link>
                 <a href="templink.html" className="list-group-item list-group-item-action">
                     <i className="fa fa-chart-bar"></i>  <span className="ps-2 d-none d-xl-inline d-xxl-inline">More</span> </a>
             </div>

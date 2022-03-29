@@ -144,6 +144,11 @@
   padding-top: 12px;
 }
 
+.wd-padding-right-12 {
+  padding-right: 12px;
+  padding-top: 12px;
+}
+
 .wd-author-name {
   /*font-color:white;*/
   font-size: 15px;
@@ -168,6 +173,22 @@
   padding-left: 64px;
 }
 
+.wd-banner-image{
+  height: 20%;
+  max-height:300px;
+  width:100%;
+  /*height:;*/
+  /*padding-left: 64px;*/
+}
+
+.wd-profile-image {
+  position: absolute;
+  height: 50%;
+  top: 48%;
+  left: 20%;
+  background-color: black;
+  padding: 4px;
+}
 .wd-bookmark-para-body{
   font-size: 15px;
   width: 506px;
