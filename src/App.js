@@ -10,6 +10,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import HomeScreen from "./components/tuiter/HomeScreen";
 import ExploreScreen from "./components/tuiter/explore-screen/explore-screen";
 import ProfileScreen from "./components/tuiter/ProfileScreen";
+import EditProfileScreen from "./components/tuiter/EditProfileScreen";
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
                 <Routes>
                     <Route path="/hello"
                            element={<HelloWorld/>}/>
-                    <Route path="/"
+                    <Route path="/labs"
                            exact={true}
                            element={<Labs/>}/>
                     {/*<Route path="/tuiter"*/}
@@ -35,6 +36,10 @@ function App() {
                     <Route path="/tuiter/profile"
                            exact={true}
                            element={<ProfileScreen/>}/>
+
+                    <Route path="/tuiter/editprofile"
+                           exact={true}
+                           element={<EditProfileScreen/>}/>
                 </Routes>
             </div>
         </BrowserRouter>

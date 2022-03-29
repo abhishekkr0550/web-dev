@@ -64,6 +64,10 @@
   font-size:10px;
 }
 
+.wd-text-gray{
+  color:darkgray;
+}
+
 .wd-p-gray-font{
   color:rgb(110, 118, 125);
   font-size:13px;
@@ -183,8 +187,8 @@
 
 .wd-profile-image {
   position: absolute;
-  height: 50%;
-  top: 48%;
+  height: 30%;
+  top: 275px;
   left: 20%;
   background-color: black;
   padding: 4px;
@@ -268,3 +272,9 @@
 .wd-text-small {
   font-size:12px;
 }
+
+.wd-button-border {
+  border-color: gray;
+  color: white;
+}
+

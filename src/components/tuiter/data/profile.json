@@ -4,11 +4,12 @@
   "handle": "akumar",
   "profilePicture": "../../images/abhishek.jpeg",
   "bannerPicture": "https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg",
-  "bio": "Student, Software Engineer, AI, Space, and renewable enthusiast. Retuits and likes are not endorsements.",
+  "bio": "Student, Software Engineer, AI, Space, and renewable enthusiast. Retuits and likes are not endorsements. Retuits and likes are not endorsements.",
   "website": "youtube.com/abhishekworld",
   "location": "Boston, MA",
   "dateOfBirth": "7/4/1997",
   "dateJoined": "1/2022",
   "followingCount": 312,
-  "followersCount": 180
+  "followersCount": 180,
+  "tuits" : 5679
 }

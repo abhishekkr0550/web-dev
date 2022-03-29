@@ -1,10 +1,10 @@
 import {Provider} from "react-redux";
 import NavigationSidebar from "../navigation-sidebar";
-import ProfileComp from "./profile";
 import profileReducer from "../reducers/profile-reducer";
 import {combineReducers, createStore} from "redux";
 import tuitsReducer from "../reducers/tuits-reducer";
 import whoReducer from "../reducers/who-reducer";
+import EditProfile from "./edit-profile";
 
 const reducer = combineReducers({
     profile: profileReducer, tuits: tuitsReducer
@@ -12,9 +12,8 @@ const reducer = combineReducers({
 
 const store = createStore(reducer);
 
-const ProfileScreen = () => {
+const EditProfileScreen = () => {
     console.log("Profile");
-    const comp = ProfileComp;
     return (
         <Provider store={store}>
             <div className="row mt-2">
@@ -22,7 +21,7 @@ const ProfileScreen = () => {
                     <NavigationSidebar active="profile"/>
                 </div>
                 <div className="col-10 col-lg-11 col-xl-10">
-                    <ProfileComp/>
+                    <EditProfile/>
                 </div>
 
 
@@ -30,4 +29,4 @@ const ProfileScreen = () => {
         </Provider>
     );
 };
-export default ProfileScreen;
+export default EditProfileScreen;
