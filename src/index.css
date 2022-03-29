@@ -178,7 +178,7 @@
 }
 
 .wd-banner-image{
-  height: 20%;
+  height: 200px;
   max-height:300px;
   width:100%;
   /*height:;*/
@@ -187,8 +187,8 @@
 
 .wd-profile-image {
   position: absolute;
-  height: 30%;
-  top: 275px;
+  height: 170px;
+  top: 180px;
   left: 20%;
   background-color: black;
   padding: 4px;

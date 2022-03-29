@@ -1,5 +1,4 @@
 import ProfileData from '../data/profile.json'
-import tuits from "../data/tuits.json";
 
 const profileReducer = (state = ProfileData, action) => {
     switch (action.type) {

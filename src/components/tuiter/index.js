@@ -6,9 +6,10 @@ import {combineReducers, createStore} from "redux";
 import {Provider} from "react-redux";
 import WhoToFollowList from "./WhoToFollowList";
 import HomeScreen from "./HomeScreen";
+import profileReducer from "./reducers/profile-reducer";
 
 const reducer = combineReducers({
-    tuits: tuitsReducer, who: whoReducer
+    tuits: tuitsReducer, who: whoReducer, profile: profileReducer
 });
 const store = createStore(reducer);
 const Tuiter = () => {
@@ -19,8 +20,7 @@ const Tuiter = () => {
                     <NavigationSidebar active="home"/>
                 </div>
                 <div className="col-10 col-lg-7 col-xl-6">
-                    {/*<Outlet/>*/}
-                    <HomeScreen/>
+                    <Outlet/>
                 </div>
                 <div className="d-none d-lg-block col-lg-4 col-xl-4">
                     <WhoToFollowList/>

@@ -18,28 +18,29 @@ function App() {
         <BrowserRouter>
             <div className="container">
                 <Routes>
-                    <Route path="/hello"
-                           element={<HelloWorld/>}/>
-                    <Route path="/labs"
-                           exact={true}
-                           element={<Labs/>}/>
-                    {/*<Route path="/tuiter"*/}
-                    <Route index
-                           exact={true}
-                           element={<Tuiter/>}/>
-                    <Route path="/tuiter/home"
-                           element={<Tuiter/>}/>
-                           {/*element={<HomeScreen/>}/>*/}
-                    <Route path="/tuiter/explore"
-                           exact={true}
-                           element={<ExploreScreen/>}/>
-                    <Route path="/tuiter/profile"
-                           exact={true}
-                           element={<ProfileScreen/>}/>
+                    <Route path="/">
+                        <Route path="/hello"
+                               element={<HelloWorld/>}/>
+                        <Route path="/"
+                               exact={true}
+                               element={<Labs/>}/>
+                        <Route path="/tuiter"
+                               exact={true}
+                               element={<Tuiter/>}>
+                            <Route index
+                                   element={<HomeScreen/>}/>
+                            <Route path="/tuiter/explore"
+                                   exact={true}
+                                   element={<ExploreScreen/>}/>
+                            <Route path="/tuiter/profile"
+                                   exact={true}
+                                   element={<ProfileScreen/>}/>
 
-                    <Route path="/tuiter/editprofile"
-                           exact={true}
-                           element={<EditProfileScreen/>}/>
+                            <Route path="/tuiter/editprofile"
+                                   exact={true}
+                                   element={<EditProfileScreen/>}/>
+                        </Route>
+                    </Route>
                 </Routes>
             </div>
         </BrowserRouter>

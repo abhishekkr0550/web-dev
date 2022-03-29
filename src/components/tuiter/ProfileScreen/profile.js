@@ -25,13 +25,13 @@ const ProfileComp = () => {
                     </button>
                 </Link>
             </div>
-            <div className="pos-relative float-left" align="left">
+            <div className="pos-relative pt-5 float-left" align="left">
                 <h4 className="text-start" >{profile.firstName} {profile.lastName}</h4>
                 <div className="wd-author-handle float-start">
                     @{profile.handle}</div><br></br>
                 {/*{JSON.stringify(profile)}*/}
 
-    <div>{profile.bio}</div>
+                <div className="pos-relative pt-3 pb-2">{profile.bio}</div>
 
                 <div className="float-left mt-2 " align="left">
                     <span className="wd-text-gray"><i className="fas fa-map-marker-alt"></i></span>
@@ -50,7 +50,9 @@ const ProfileComp = () => {
 
 
                 </div>
-
+                <div className="text-start mt-3">
+                    <span >{profile.website}</span>
+                </div>
 
             </div>
 </>

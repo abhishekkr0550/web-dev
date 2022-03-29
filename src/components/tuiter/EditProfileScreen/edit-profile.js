@@ -4,7 +4,6 @@ import {Link} from "react-router-dom";
 import {useDispatch} from "react-redux";
 
 
-
 const EditProfile = () => {
     const dispatch = useDispatch();
     const profile = useSelector(state => state.profile);
@@ -13,7 +12,7 @@ const EditProfile = () => {
     const todoChangeFirstName = (event) => {
         const name = event.target.value;
         const newProfile = {
-            ... profileChange,
+            ...profileChange,
             firstName: name
         };
         setProfileChange(newProfile);
@@ -22,11 +21,49 @@ const EditProfile = () => {
     const todoChangeLastName = (event) => {
         const name = event.target.value;
         const newProfile = {
-            ... profileChange,
+            ...profileChange,
             lastName: name
         };
         setProfileChange(newProfile);
     }
+
+    const todoChangeBio = (event) => {
+        const name = event.target.value;
+        const newProfile = {
+            ...profileChange,
+            bio: name
+        };
+        setProfileChange(newProfile);
+    }
+
+    const todoChangeLocation = (event) => {
+        const name = event.target.value;
+        const newProfile = {
+            ...profileChange,
+            location: name
+        };
+        setProfileChange(newProfile);
+    }
+
+    const todoChangeDOB = (event) => {
+        const name = event.target.value;
+        const newProfile = {
+            ...profileChange,
+            dateOfBirth: name
+        };
+        setProfileChange(newProfile);
+    }
+
+    const todoChangeWebsite = (event) => {
+        const name = event.target.value;
+        const newProfile = {
+            ... profileChange,
+            website: name
+        };
+        setProfileChange(newProfile);
+    }
+
+
 
     const assertChanges = (event) => {
         dispatch({type: 'change-profile', profileChange})
@@ -35,7 +72,14 @@ const EditProfile = () => {
     return(
         <>
         <div className="pos-relative" >
-            <span className="text-start float-start" >Edit Profile</span>
+
+
+            <span className="text-start float-start " >
+                <Link to="/tuiter/profile">
+                     <i  className="fas fa-times me-3"></i>
+                </Link>
+                    <span >Edit Profile</span>
+            </span>
             <span>
                 <Link to="/tuiter/profile">
                     <button className="btn btn-primary-white rounded-pill float-end mt-3 " onClick={assertChanges}>
@@ -59,17 +103,26 @@ const EditProfile = () => {
                     </button>
                 </Link>
             </div>
-            <div className="pos-relative float-left" align="left">
+            <div className="pos-relative float-left mt-5" align="left" style={{margintop:"10px"}}>
                 <h5>First Name</h5>
 
                 <input value={profileChange.firstName} onChange={todoChangeFirstName} className="form-control"/><br/>
                 <h4>Last Name</h4>
                 <input value={profileChange.lastName} onChange={todoChangeLastName} className="form-control"/>
-                <div className="wd-author-handle float-start">
-                    @{profile.handle}</div><br></br>
-                {/*{JSON.stringify(profile)}*/}
+                <br/>
+                <h4>Bio</h4>
+                <input value={profileChange.bio} onChange={todoChangeBio} className="form-control"/>
+                <br/>
+                <h4>Location</h4>
+                <input value={profileChange.location} onChange={todoChangeLocation} className="form-control"/>
 
-                <div>{profile.bio}</div>
+                <br/>
+                <h4>Date of Birth</h4>
+                <input value={profileChange.dateOfBirth} onChange={todoChangeDOB} className="form-control"/>
+
+                <br/>
+                <h4>Location</h4>
+                <input value={profileChange.website} onChange={todoChangeWebsite} className="form-control"/>
 
                 <div className="float-left mt-2 " align="left">
                     <span className="wd-text-gray"><i className="fas fa-map-marker-alt"></i></span>

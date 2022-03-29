@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import todosReducer from "./reducers/todos-reducer";
 
 const Todos = () => {
     const todos
