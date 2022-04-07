@@ -11,28 +11,31 @@ const tuitsReducer = (state = [], action) => {
                 tuit => tuit._id !== action.tuit._id);
 
         case CREATE_TUIT:
+            console.log("Create tuit reducer")
             console.log(action.newTuit);
-            const newTuit = {
-                data: action.newTuit.tuit,
-                _id: (new Date()).getTime() + '',
-
-                name: 'New Tuit Creator',
-                date: (new Date() + '').substring(3, 10),
-                title: 'New Tuit through Reducer',
-                image: '../../images/tesla.jpeg',
-                profile: '../../images/abhishek.jpeg',
-                heading: 'This is a brand new Tuit',
-                coment: '550',
-                likes: 550,
-                retuit: '550',
-                upload: '550',
-                liked: false
-
-            }
+            // const saveNewTuit = {
+            //     data: action.newTuit.tuit,
+            //     _id: (new Date()).getTime() + '',
+            //
+            //     name: 'New Tuit Creator',
+            //     date: (new Date() + '').substring(3, 10),
+            //     title: 'New Tuit through Reducer',
+            //     image: '../../images/tesla.jpeg',
+            //     profile: '../../images/abhishek.jpeg',
+            //     heading: 'This is a brand new Tuit',
+            //     coment: '550',
+            //     likes: 550,
+            //     retuit: '550',
+            //     upload: '550',
+            //     liked: false
+            //
+            // }
             return [
                 ...state,
-                newTuit
+                action.newTuit
             ];
+
+
 
         case UPDATE_TUIT:
             return state.map(

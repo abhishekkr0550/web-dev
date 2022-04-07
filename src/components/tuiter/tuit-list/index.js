@@ -18,7 +18,8 @@ const TuitList = () => {
             findAllTuits(dispatch),
         [dispatch]
         );
-
+    console.log("Home[age");
+    console.log(tuits);
     return(
         <div className="row">
 
