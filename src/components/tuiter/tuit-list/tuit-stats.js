@@ -5,8 +5,8 @@ import {
 
 const TuitStats = ({post}) => {
 
-    const [newTuit, setNewTuit] =
-        useState({tuit: 'New tuit'});
+    // const [newTuit, setNewTuit] =
+    //     useState({tuit: 'New tuit'});
 
     const dispatch = useDispatch();
 

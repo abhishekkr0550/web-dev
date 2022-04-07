@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import TuitListItem from "./tuit-list-item";
 import {useDispatch, useSelector} from "react-redux";
-import {createTuit, findAllTuits}
+import {findAllTuits}
     from "../../actions/tuits-actions";
 
 const TuitList = () => {
@@ -9,14 +9,14 @@ const TuitList = () => {
     const tuits = useSelector(
         state => state.tuits);
 
-    const [newTuit, setNewTuit] =
-        useState({tuit: 'New tuit'});
+    // const [newTuit, setNewTuit] =
+    //     useState({tuit: 'New tuit'});
 
     const dispatch = useDispatch();
 
     useEffect(() =>
-            findAllTuits(dispatch),
-        []);
+            findAllTuits(dispatch)
+        );
 
     return(
         <div className="row">
