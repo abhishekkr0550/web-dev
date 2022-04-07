@@ -1,11 +1,19 @@
-import tuits from "../data/tuits.json";
+// import tuits from "../data/tuits.json";
+import {DELETE_TUIT, FIND_ALL_TUITS, CREATE_TUIT, UPDATE_TUIT} from "../../actions/tuits-actions";
 
-
-const tuitsReducer = (state = tuits, action) => {
+const tuitsReducer = (state = [], action) => {
     switch (action.type) {
-        case 'create-tuit':
+        case FIND_ALL_TUITS:
+            return action.tuits;
+
+        case DELETE_TUIT:
+            return state.filter(
+                tuit => tuit._id !== action.tuit._id);
+
+        case CREATE_TUIT:
+            console.log(action.newTuit);
             const newTuit = {
-                data: action.tuit,
+                data: action.newTuit.tuit,
                 _id: (new Date()).getTime() + '',
 
                 name: 'New Tuit Creator',
@@ -20,12 +28,40 @@ const tuitsReducer = (state = tuits, action) => {
                 upload: '550',
                 liked: false
 
-                }
-
+            }
             return [
-                newTuit,
                 ...state,
+                newTuit
             ];
+
+        case UPDATE_TUIT:
+            return state.map(
+                tuit => tuit._id === action.tuit._id ?
+                    action.tuit : tuit);
+
+        // case 'create-tuit':
+        //     const newTuit = {
+        //         data: action.tuit,
+        //         _id: (new Date()).getTime() + '',
+        //
+        //         name: 'New Tuit Creator',
+        //         date: (new Date() + '').substring(3, 10),
+        //         title: 'New Tuit through Reducer',
+        //         image: '../../images/tesla.jpeg',
+        //         profile: '../../images/abhishek.jpeg',
+        //         heading: 'This is a brand new Tuit',
+        //         coment: '550',
+        //         likes: 550,
+        //         retuit: '550',
+        //         upload: '550',
+        //         liked: false
+        //
+        //         }
+        //
+        //     return [
+        //         newTuit,
+        //         ...state,
+        //     ];
 
         case 'delete-tuit':
             console.log(action.post._id);
@@ -52,7 +88,7 @@ const tuitsReducer = (state = tuits, action) => {
             });
 
         default:
-            return tuits
+            return state;
     }
 }
 

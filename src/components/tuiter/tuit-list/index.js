@@ -1,11 +1,22 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import TuitListItem from "./tuit-list-item";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
+import {createTuit, findAllTuits}
+    from "../../actions/tuits-actions";
 
 const TuitList = () => {
 
     const tuits = useSelector(
         state => state.tuits);
+
+    const [newTuit, setNewTuit] =
+        useState({tuit: 'New tuit'});
+
+    const dispatch = useDispatch();
+
+    useEffect(() =>
+            findAllTuits(dispatch),
+        []);
 
     return(
         <div className="row">

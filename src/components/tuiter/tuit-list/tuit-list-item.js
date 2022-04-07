@@ -1,4 +1,7 @@
 import React from "react";
+import {deleteTuit, updateTuit}
+    from "../../actions/tuits-actions";
+
 import {useDispatch} from "react-redux";
 import TuitStats from "./tuit-stats";
 
@@ -14,10 +17,10 @@ const TuitListItem = ({
                   }) => {
     const dispatch = useDispatch();
 
-    const deleteTuit = (post) => {
-
-        dispatch({type: 'delete-tuit', post})
-    };
+    // const deleteTuit = (post) => {
+    //
+    //     dispatch({type: 'delete-tuit', post})
+    // };
 
     return(<>
         <div className="wd-bg-color-black wd-border-solid" align="left">
@@ -29,7 +32,7 @@ const TuitListItem = ({
             <span className="wd-padding-left-12 wd-author-name">{post.name}</span><i className="fas fa-check-circle"></i>
             <span className="wd-padding-left-12 wd-author-handle">@{post.handle}</span>
             <span className="wd-padding-left-12 wd-author-handle">{post.date}</span>
-            <span className="wd-padding-left-12 wd-author-handle float-end"><i onClick={() => deleteTuit(post)} className="fas fa-times"></i></span>
+            <span className="wd-padding-left-12 wd-author-handle float-end"><i onClick={() => deleteTuit(dispatch, post)} className="fas fa-times"></i></span>
             <p className="wd-bookmark-para">{post.title}</p>
             <div className="wd-round-border">
                 <img className="wd-padding-top wd-bookmark-big-img wd-rounded-corners-all-around"
@@ -45,7 +48,7 @@ const TuitListItem = ({
                 <a className="wd-icon-lightgray wd-padding-left-64" href="templink.html">
                     <i className="fas fa-retweet"></i> <span className="wd-padding-left-12">{post.retuit}</span>
                 </a>
-                <span className="wd-icon-lightgray wd-padding-left-64" href="templink.html">
+                <span className="wd-icon-lightgray wd-padding-left-64" >
                     <TuitStats post={post}/>
                 </span>
                 <a className="wd-icon-lightgray wd-padding-left-64" href="templink.html">
