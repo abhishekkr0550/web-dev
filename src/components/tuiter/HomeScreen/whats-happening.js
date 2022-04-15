@@ -7,7 +7,7 @@ const WhatsHappening = () => {
     // let [whatsHappening, setWhatsHappening]
     //     = useState('');
     const [newTuit, setNewTuit] =
-        useState({tuit: 'New tuit'});
+        useState({tuit: ''});
 
     const dispatch = useDispatch();
 
@@ -19,7 +19,7 @@ const WhatsHappening = () => {
     // }
     return (
         <>
-            <textarea className="col-12"
+            <textarea className="col-12" placeholder={`What's Happening`} value={newTuit.tuit}
                       onChange={(e) =>
                           setNewTuit({...newTuit,
                               tuit: e.target.value})}>
